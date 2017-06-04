@@ -1,0 +1,25 @@
+/*
+Footer
+*/
+
+.main-footer{
+  padding: 72px 0 69px;
+  background-color: #fcfcfc;
+  text-align: center;
+
+  &__text{
+    color:  #81868e;
+    font-size: 14px;
+    line-height: 25px;
+    margin: 24px 0 37px;
+  }
+
+  &__social{
+    display: inline-block;
+    padding: 4px;
+
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+}

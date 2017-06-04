@@ -1,0 +1,90 @@
+/*
+HEADER
+*/
+*
+
+.main-head{
+  width: 100%;
+  height: 100vh;
+  padding: 39px 0 77px;
+  background: url("../img/bg-head.jpg") 50% 50% no-repeat #000;
+  background-size: cover;
+}
+
+/* header-menu */
+
+.top-logo{
+    padding-top: 5px;
+}
+
+.top-nav{
+  &__item{
+    float: left;
+    padding: 5px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 1px solid transparent;
+
+    &:hover{
+      border: 1px solid $text-color;
+      border-radius: 20px;
+    }
+  }
+
+  &__link{
+    color: $text-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 12px;
+  }
+}
+
+.active-nav-link{
+  border: 1px solid $text-color;
+  border-radius: 20px;
+}
+
+/* HEADER-info */
+
+.top-banner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $text-color;
+  text-align: center;
+  max-width: 630px;
+
+  &__title{
+    font-family: $title-font-family;
+    font-size: 35px;
+    font-weight: 300;
+    letter-spacing: 7px;
+    line-height: 70px;
+    text-transform: uppercase;
+  }
+
+  &__text{
+    line-height: 28px;
+    margin: 10px 0;
+  }
+
+  &__arrow{
+    position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    bottom: 77px;
+
+    background: url('../img/head-btn.png') no-repeat 50%;
+    transition: transform .2s ease-in;
+
+    &:hover {
+      box-shadow: 0px 0px 10px #fff;
+      opacity: 0.8;
+    }
+  }
+}
+

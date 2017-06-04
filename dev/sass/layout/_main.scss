@@ -1,0 +1,224 @@
+/* Style typography all section */
+
+.all-section-style{
+  text-align: center;
+  padding: 89px 0 102px;
+
+  &__title{
+    font-family: $title-font-family;
+    color: #333b46;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    line-height: 12px;
+    text-transform: uppercase;
+  }
+
+  &__text{
+    color:  #81868e;
+    font-size: 14px;
+    line-height: 25px;
+    max-width: 460px;
+    margin: 41px auto 60px;
+  }
+}
+
+/* PORTFOLIO */
+
+.portfolio{
+  background-color: #f1f1f1;
+
+  &__filter{
+    color:  #464646;
+    line-height: 12px;
+    display: inline-block;
+    font-weight: 600;
+    padding: 0 13px;
+    position: relative;
+    cursor: pointer;
+  }
+}
+.portfolio__filter,
+.active-filter{
+  &:after{
+    content: '';
+    height: 2px;
+    width: 40%;
+    background-color: #19bd9a;
+    position: absolute;
+    left: 50%;
+    margin-left: -19px;
+    margin-top: 25px;
+    visibility: hidden;
+  }
+  &:hover:after{
+    visibility: visible;
+  }
+}
+.active-filter:after{
+  visibility: visible;
+}
+
+.portfolio-works {
+  margin-top: 70px;
+
+  &__item {
+    padding: 5px;
+  }
+
+  &__img{
+    display:inline-block;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);  
+      &:hover {
+        box-shadow: 0px 0px 150px #000000;
+        z-index: 2;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.2);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1.2);   
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.2);
+        transition: all 200ms ease-in;
+        transform: scale(1.2);
+      }
+  }
+}
+
+/* TEAM section */
+
+.team{
+  &__cards{
+    padding: 0 70px;
+    text-align: right;
+  }
+
+  &__name{
+    color: #464646;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    margin-right: 40px;
+
+    &:after{
+      content: '';
+      height: 42px;
+      width: 4px;
+      background-color: #19bd9a;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-right: -40px;
+      margin-top: 5px;
+    }
+  }
+
+  &__prof{
+    font-family: $title-font-family;
+    color:  #81868e;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1.4px;
+    line-height: 25px;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-right: 40px;
+  }
+
+  &__text{
+    max-width: 370px;
+    color:  #81868e;
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 20px;
+    margin-right: 40px;
+  }
+}
+
+/* CONTACT US section */
+
+.contact-us{
+  text-align: center;
+  padding: 58px 0;
+  background: url("../img/bg-contact.jpg") 50% no-repeat #000000;
+  background-size: cover;
+
+  &__title{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 29px;
+  }
+
+  &__btn{
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: none;
+    border-radius: 20px;
+    padding: 5px 20px;
+
+    &:hover{
+      border: 1px solid #19bd9a;
+      color: #19bd9a;
+      box-shadow: 0px 0px 20px #19bd9a;
+    }
+  }
+}
+
+/* Testimonial section */
+
+.testimonials{
+  background-color: #f3f3f3;
+
+  &__cards{
+    background-color: #fff;
+    padding: 52px 120px 60px 96px;
+    text-align: left;
+  }
+
+  &__descr{
+    display: block;
+    padding-left: 200px;
+  }
+
+  &__text{
+    color:  #81868e;
+    line-height: 28px;
+  }
+
+  &__name{
+    color:  #19bd9a;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin: 30px 0 0;
+  }
+
+  &__prof{
+    color:  #464646;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+}
+
+/* CONTACT-MAP section */
+
+.contact{
+  padding-bottom: 0;
+}
+#map{
+  height: 440px;
+}
+
